@@ -1,1 +1,1 @@
-include: [_navbar.md]
+include: [css, _navbar.md]
