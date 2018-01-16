@@ -15,7 +15,7 @@
     </thead>
     <tbody>
     <tr class="success">
-        <td>携程支付</td>
+        <td>携程</td>
         <td>http://www.ctrip.com</td>
         <td>逐步替代原有BO分析平台</td>
     </tr>
