@@ -1,7 +1,5 @@
 <h1> 数据源管理 </h1>
 
----
-
 <div class="bs-callout bs-callout-info">
     <h4>目前CBoard支持以下数据源连接：</h4>
     <ul>
@@ -33,12 +31,10 @@
 理论上Hive、Spark-SQL也可以通过JDBC的方式连接，考虑到二者执行效率都不是太高不适合做及时交互查询引擎。不推荐引入
 
 ### 驱动引入方式
-<div class="admonition warning">
-  <p class="admonition-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> 注意:</p>
-  <p>添加JDBC数据源之前确认<code>WEB-INF\lib</code>下面已经包含了对应的JDBC驱动包，<b>MySQL/SQLServer/Kylin的JDBC驱动不需要额外引入。</b></p>
-</div>
-1 Maven方式在打包之前修改pom.xml\(推荐\)
-下面是mysql的maven依赖：
+
+!> 添加JDBC数据源之前确认<code>WEB-INF\lib</code>下面已经包含了对应的JDBC驱动包，<b>MySQL/SQLServer/Kylin的JDBC驱动不需要额外引入。</b>
+1. Maven方式在打包之前修改pom.xml(推荐),下面是mysql的maven依赖：
+
 ```xml
 <dependency>
     <groupId>mysql</groupId>
@@ -47,12 +43,12 @@
 </dependency>
 ```
 
-2 应用在Web容器解包之后拷贝驱动到<code>WEB-INF\lib</code>，之后**重启Tomcat**
+2. 应用在Web容器解包之后拷贝驱动到<code>WEB-INF\lib</code>，之后**重启Tomcat**
 
-* 填写完毕之后可以点击**测试**按钮，输入简单的sql查询测试数据源与CBoard之间的连通性
-* 0.3新增两项配置
-* <code>是否使用连接池</code> 设置数据源是否通过druid连接池的方式连接数据源
-* <code>数据源聚合</code> 0.3之后的版本支持聚合下推数据源
+    * 填写完毕之后可以点击**测试**按钮，输入简单的sql查询测试数据源与CBoard之间的连通性
+    * 0.3新增两项配置
+    * <code>是否使用连接池</code> 设置数据源是否通过druid连接池的方式连接数据源
+    * <code>数据源聚合</code> 0.3之后的版本支持聚合下推数据源
 
 ## 2 Kylin 1.6数据源
 

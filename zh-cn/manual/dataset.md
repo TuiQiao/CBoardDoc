@@ -27,11 +27,8 @@ SELECT a, b, c,
  JOIN dimb b ON ...
 GROUP BY a, b, c, <span class="text-danger"><b>e, f, g</b></span></code></pre>
 
-<div class="admonition warning">
-  <p class="admonition-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> 注意:</p>
-   0.2之前的查询数据结果数据会全部读取到浏览器端，OLAP操作都在浏览器端进行，使用不当的情况下会造成客户端浏览器压力巨大。
-   <p>0.3引入数据源聚合，实现了JDBC、Kylin、Elasticsearch的数据源聚合功能。同时考虑到小企业存在原始数据大、数据源配置低，但是需要分析的最终数据较小的应用场景，所以保留了离线数据集特性，使用时只需在JDBC数据源创建时不要勾选数据源聚合即可。</p>
-</div>
+!> <b>0.2</b>之前的查询数据结果数据会全部读取到浏览器端，OLAP操作都在浏览器端进行，使用不当的情况下会造成客户端浏览器压力巨大。<br/>
+<b>0.3</b>引入数据源聚合，实现了JDBC、Kylin、Elasticsearch的数据源聚合功能。同时考虑到小企业存在原始数据大、数据源配置低，但是需要分析的最终数据较小的应用场景，所以保留了离线数据集特性，使用时只需在JDBC数据源创建时不要勾选数据源聚合即可。
 
 ## 1 数据集模型定义
 
@@ -65,6 +62,7 @@ GROUP BY a, b, c, <span class="text-danger"><b>e, f, g</b></span></code></pre>
 ## 4 特殊数据集的查询定义说明
 
 ### 4.1 Kylin Native
+![image](/assets/KylinDataSet.png)
 <div class="bs-callout bs-callout-info">
     使用Kylin数据源之前需对Kylin基本原理有所了解。
     需要填写项, 以及解释如下：
@@ -73,16 +71,16 @@ GROUP BY a, b, c, <span class="text-danger"><b>e, f, g</b></span></code></pre>
         <li><b>Data Model</b>：对应Kylin Model</li>
     </ul>
 </div>
-![image](/assets/KylinDataSet.png)  
 
 
 ### 4.2 Elasticsearch
+![](/assets/es_dataset.png)
 <div class="bs-callout bs-callout-info">
-    为了减少对ES版本以及第三方ES库的依赖，CBoard采取<mark>restful + DSL连接与查询模式</mark>。所以ES的使用需要使用者（尤其是建模者）对ES基本概念有所了解，之外还需要掌握一些DSL语法。  
+    为了减少对ES版本以及第三方ES库的依赖，CBoard采取<mark>restful + DSL连接与查询模式</mark>。所以ES的使用需要使用者（尤其是建模者）对ES基本概念有所了解，之外还需要掌握一些DSL语法。
     ES查询需要参数需要精确到<code>Type，Index</code>名称可使用通配符原理与ES DSL查询URL参数一样。  
     由于ES里面存储的数据大多为明细数据，时间维度聚合的时候粒度需要调整为时间段<code>date_histgram</code>，而默认的聚合级别为<code>term</code>也就是关键词，所以在使用时间维度聚合之前需要调整聚合粒度。
 </div>
-![](/assets/es_dataset.png)
+
 
 
 #### 4.2.1 Override Aggregations
@@ -178,10 +176,9 @@ count("{
 }")
 ```
 
-![](/assets/ES-CM.png)  
-<div class="bs-callout bs-callout-info" id="callout-focus-demo">
-    <p>CBoard也内建了一些常用过滤器输入辅助  </p>
-</div>
+![](/assets/ES-CM.png)
+
+!> CBoard也内建了一些常用过滤器输入辅助
 
 ![](/assets/es-cm-completer.png)
 

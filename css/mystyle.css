@@ -3,14 +3,18 @@ h1, h2, h3, h4 {
     margin-bottom: 20px;
 }
 
+.github-corner svg {
+    z-index: 2;
+}
+
 .app-nav {
-    margin: 0 80px 0 0;
-    padding: 25px 5px;
+    margin: 0 0 0 0;
+    padding: 25px 80px;
     position: fixed;
     right: 0;
     left: 23%;
     text-align: right;
-    z-index: 2;
+    z-index: 1;
     background-color: white;
 }
 
@@ -28,6 +32,12 @@ h1, h2, h3, h4 {
     font-weight: normal;
     line-height: 1;
     color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
     opacity: 1;
 }
 
@@ -127,6 +137,7 @@ a.bg-danger:focus {
 }
 
 .admonition-title {
+    margin: 5px !important;
     font-weight: bold;
     text-align: left;
 }

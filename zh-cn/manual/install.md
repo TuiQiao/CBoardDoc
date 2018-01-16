@@ -33,16 +33,14 @@ $ maven clean package -Denv=h2
 $ docker build --network=host -t cboard .
 ```
 
-# 自己编译构建项目
+## 自己编译构建项目
 
 <div class="admonition warning">
   <p class="admonition-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> 注意:</p>
   <p>为了避免由于JDK版本不匹配引起的各种问题强烈建议自行编译构建项目。</p>
 </div>
-<!-- <div class="bs-example-bg-classes">
-  <p class="bg-warning"> 为了避免由于JDK版本不匹配引起的各种问题强烈建议自行编译构建项目。 </p>
-</div> -->
-## 项目要求
+
+### 项目要求
 
 * JDK1.8 \(Java环境\)
 * Maven3
@@ -60,25 +58,28 @@ $ docker build --network=host -t cboard .
   <mirrorOf>central</mirrorOf>
 </mirror>
 ```
+
 * [PhantomJS](http://phantomjs.org/) Version 2.1+ \(用于看板导出与邮件发送\)
 * 基础的数据库、数据仓库、OLAP数据分析知识或者Excel透视表使用经验
 * 系统维护与管理者需要有一定的J2EE项目经验
 
-## 获取代码
+### 获取代码
 github上下载或者clone项目源代码
 <div class="admonition danger">
   <p class="admonition-title"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 警告</p>
   <p>CBoard仓库中以<code>branch-</code>开头的分支为开发分支，经过内部测试使用之后在分支上发布可用版本。<code>master</code>仅用来同步分支最新代码，非发布、不稳定分支，请不要在master进行项目构建。</p>
 </div>
-<pre><code class="nohighlight">git clone https://github.com/yzhang921/CBoard.git
-git checkout branch-0.4 </code></pre>
 
-## 准备CBoard元数据库 
+```bash
+git clone https://github.com/yzhang921/CBoard.git
+git checkout branch-0.4
+```
 
-<div class="bs-example-bg-classes">
-  <p class="bg-info"> 以MySQL为例 </p>
-</div>
-### 1. 从演示数据库开始
+### 准备CBoard元数据库
+
+?> 以MySQL为例
+
+#### 1. 从演示数据库开始
 - 你可以从用于演示的样本数据库开始，包含样本元数据库(cboard_demo2)和样本DW库(foodmart2)
 - 下载[cboard_demo & foodmart](https://pan.baidu.com/s/1skOyPh7)
 - 终端命令行进入下载这两个脚本的目录，并解压foodmart.zip
@@ -89,7 +90,7 @@ mysql> source foodmart.sql
 ```
 - 成功执行之后检查 cboard_demo2 和 foodmart2 两个DB已经成功导入，最后查看一下数据
 
-### 2. 从空白元数据库开始
+#### 2. 从空白元数据库开始
 执行元数据创建脚本：
 ```mysql
 $ cd cboard
@@ -98,9 +99,9 @@ mysql> use cboard;
 mysql> source sql/mysql/mysql.sql
 ```
 
-## 修改配置文件
+### 修改配置文件
 
-<code>src/main/resources/config.properties</code>
+?> src/main/resources/config.properties
 
 ```pro
 validationQuery=SELECT 1
@@ -126,7 +127,7 @@ cache.redis.hostName=127.0.0.1
 cache.redis.port=6379
 ```
 
-## 编译构建
+### 编译构建
 
 进入项目根目录(<code>pom.xml</code>所在目录)
 
@@ -150,18 +151,18 @@ $ mvn clean package
 ```
 
 
-## 部署war到tomcat容器
+### 部署war到tomcat容器
 
 * 拷贝CBoard\target\cboard.war到tomcat的webapp目录
 * 启动tomcat
 
-## 访问应用
+### 访问应用
 
 通过Chrome访问应用  
 <b>http://_yourserverip_:8080</b>  
 默认登录用户名和密码: admin/root123
 
-## 样本数据源是否配置正确
+### 样本数据源是否配置正确
 <div class="admonition warning">
   <p class="admonition-title"><i class="fa fa-info-circle" aria-hidden="true"></i> 注意</p>
   为了数据安全，在编辑数据源的时候，密码不会被加载回前端。故每次测试数据连接和修改数据连接的时候请再次输入连接密码。
@@ -169,7 +170,7 @@ $ mvn clean package
 
 ![](/assets/demo_datasource.png)
 
-# CBoard使用基本步骤
+## CBoard使用基本步骤
 
 ![](/assets/use-steps.png)
 

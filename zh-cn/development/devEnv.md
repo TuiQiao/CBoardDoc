@@ -49,7 +49,7 @@ File Open -> pom.xml
 
 完成之后就可以点击工具栏上面的运行按钮运行了，默认通过**http://localhost:8080**访问应用，看到的登陆界面如下。
 
-![](/assets/login.png)
+![](/assets/login.jpg)
 
 
 ## IDEA社区版

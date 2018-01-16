@@ -36,6 +36,7 @@
     <img src="../../assets/config_widget.png" alt="Image">
     <p>图表设计功能区</p>
 </div>
+
 ### 界面模块介绍
 #### 图表列表区
 * 显示已保保存的图表
