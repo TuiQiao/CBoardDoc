@@ -169,7 +169,7 @@
 
 
 <blockquote>
-经过前期预研,最终选择了CBoard🥇---在对比了其它开源方案后(metabase/superset/Redash/zeppelin/Saiku,baidu/BIPlatform,ureport/EasyReport)
+经过前期预研,最终选择了CBoard:1st_place_medal:---在对比了其它开源方案后(metabase/superset/Redash/zeppelin/Saiku,baidu/BIPlatform,ureport/EasyReport)
 CBoard和我们的需求很匹配,节省了我们的大量时间, 现在可以站在CBoard的肩膀上做一些定制.
 可以用CBoard替换掉现在公司正在使用的tableau和自己开发的页面了. 内部管Tableau叫TB,管CBoard叫CB
 公司准备用CBoard+Palo(百度开源的分析型数据库)搭建"报表和多维分析"服务.
