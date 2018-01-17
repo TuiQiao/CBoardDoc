@@ -1,1 +1,1 @@
-include: [_navbar.md]
+include: [_navbar.md, _coverpage.md]

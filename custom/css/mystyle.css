@@ -9,13 +9,13 @@ h1, h2, h3, h4 {
 
 .app-nav {
     margin: 0 0 0 0;
-    padding: 25px 80px;
+    padding: 25px 80px 0 25px;
     position: fixed;
     right: 0;
     left: 23%;
     text-align: right;
     z-index: 1;
-    background-color: white;
+    /*background-color: white;*/
 }
 
 .close .app-nav {
