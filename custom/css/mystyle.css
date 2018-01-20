@@ -210,3 +210,19 @@ kbd {
     -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
     box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
 }
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    color: white;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 7px;
+}
+
+#topBtn:hover {
+    background-color: #555;
+}
