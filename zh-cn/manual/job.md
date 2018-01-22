@@ -17,7 +17,7 @@ mail.smtp.from=test@test.com
 ```
 * 配置邮件任务之前确保系统环境已经正确配置
 * 邮件服务器配置正确，并且应用环境能够正常调用邮件发送接口
-* <a href="http://phantomjs.org/">phantomjs</a>安装配置正确正确，正常情况下如果Dashboard能够正常导出表示安装配置正确
+* <a href="http://phantomjs.org/">phantomjs</a>安装配置正确: 正常情况下如果Dashboard能够正常导出表示安装配置正确
 
 ### 新建任务，填写任务表单
 * 任务名称
