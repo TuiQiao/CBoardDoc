@@ -31,11 +31,13 @@
         name: '<b>CB</b>oard v0.4',
         repo: 'https://github.com/yzhang921/CBoard',
         auto2top: true,
+        loadSidebar: true,
         loadNavbar: true,
-        search : [
-            '/',            // => /README.md
-            '/zh-cn/',      // => /zh-cn/README.md
-        ],
+        maxLevel: 4,
+        subMaxLevel: 4,
+        search : {
+            paths: 'auto'
+        },
         coverpage: true,
         plugins: [my_footer]
     }
