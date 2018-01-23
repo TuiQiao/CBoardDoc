@@ -32,10 +32,9 @@
         repo: 'https://github.com/yzhang921/CBoard',
         auto2top: true,
         loadNavbar: true,
-        search : [
-            '/',            // => /README.md
-            '/zh-cn/',      // => /zh-cn/README.md
-        ],
+        search : {
+            paths: 'auto'
+        },
         coverpage: true,
         plugins: [my_footer]
     }
