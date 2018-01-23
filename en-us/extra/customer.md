@@ -1,8 +1,8 @@
-## 谁在使用CBoard
+## Who is using CBoard?
 <div class="bs-callout bs-callout-info" id="callout-focus-demo">
-    <h4>欢迎登记</h4>
-    <p>如果你们公司正在使用或者准备使用CBoard请在下面留下贵公司的公司名和公司主页，让我们的团队知道辛苦没有白费。</p>
-    <a href="https://github.com/yzhang921/CBoard/issues/122"><button type="button" class="btn btn-primary btn-sm"><i class="fa fa-mail-forward"></i> 跳转登记页</button></a>
+    <h4>Welcome to register your company information!</h4>
+    <p>If your company is using CBoard pls kindly leave your company information.</p>
+    <a href="https://github.com/yzhang921/CBoard/issues/122"><button type="button" class="btn btn-primary btn-sm"><i class="fa fa-mail-forward"></i> Go to registration page </button></a>
 </div>
 
 <table class="table">
@@ -159,7 +159,7 @@
     </tbody>
 </table>
 
-## 用户反馈
+## User's Feedback
 <blockquote>
 我们是创维酷开大数据部的，0.3.2版本已经在我们的正式环境中稳定运行。
 报表优化的非常好，内部员工用起来明显感觉快了很多，并且功能比0.2版本要强大很多。
