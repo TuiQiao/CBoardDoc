@@ -1,4 +1,4 @@
-function my_footer(hook) {
+function my_footer(hook, vm) {
     var footer = [
         '<hr/>',
         '<footer class="text-center">',
@@ -11,5 +11,21 @@ function my_footer(hook) {
     ].join('');
     hook.afterEach(function (html) {
         return html + footer;
-    })
+    });
+    hook.beforeEach(function (html) {
+        var repoPath = 'https://github.com/yzhang921/cboard_doc',
+            editTitle = 'Help improve document!';
+        if (vm.route.path.indexOf('zh-cn') != -1) {
+            repoPath = 'https://gitee.com/peter_zhang921/cboard_docsify';
+            editTitle = '帮助改善文档!';
+        }
+
+        var url = repoPath + '/blob/master/' + vm.route.file;
+        var editHtml = '[:memo: ' + editTitle +  '](' + url + ')\n';
+
+        return editHtml
+            + html
+            + '\n----\n'
+            + editHtml
+    });
 }
