@@ -13,11 +13,7 @@
 
 - Discuss
   - [Performance Tuning](en-us/discuss/optimize.md)
-  - [FaQ](en-us/discuss/faq.md)
-
-- Development
-  - [How to Dev](en-us/development/devEnv.md)
-  - [How to Contribute](en-us/development/howToContribute.md)
+  - [FAQ](en-us/discuss/faq.md)
 
 - Extra
   - [Release Notes](en-us/extra/releaseNote.md)

@@ -1,10 +1,10 @@
-<h1> 定时任务 </h1>
+<h1> Cron Job </h1>
 
 ---
 
-## 定时邮件发送
+## EMail Report Job
 
-### 邮件发送配置
+### Configuration
 ```properties
 phantomjs_path=D:/phantomjs-2.1.1-windows/bin/phantomjs.exe
 
@@ -15,29 +15,28 @@ mail.smtp.from=test@test.com
 #mail.smtp.password=111111
 #mail.smtp.ssl.checkserveridentity=false
 ```
-* 配置邮件任务之前确保系统环境已经正确配置
-* 邮件服务器配置正确，并且应用环境能够正常调用邮件发送接口
-* <a href="http://phantomjs.org/">phantomjs</a>安装配置正确正确，正常情况下如果Dashboard能够正常导出表示安装配置正确
+* Make sure the system environment correctly configured before setting the e-mail task.
+* The `SMTP` server is available and it can be accessed from application.
+* <a href="http://phantomjs.org/">phantomjs</a> has been correct configured. If Dashboard can be exported successfully means the configuration is correct.
 
-### 新建任务，填写任务表单
-* 任务名称
-* 任务类型(邮件发送Send Mail)
-* 任务有效期
-* 周期
+### Create and config job
+* Name
+* Active Range
+* Every (Frequency)
 
 ![](/assets/add_job.png) 
 
-### 配置邮件内容
-* 收件人(必填)/抄送/密送/邮件主题
-* 添加看板：可以添加多个看板
-* 配置看板展示形式
-    * **Xls**：看板以Excel附件形式展示
-    * **Image**：看板以页面截图形式在邮件正文展示
-    * **Both**：两种形式共存
+### E-mail configuration content
+* Receiver(required)/CC/BCC/subject
+* Add dashboard: can add more than one dashboard.
+* Content type
+    * **Xls**：By Excel
+    * **Image**：By screen shoot in E-mail
+    * **Both**：
     
 ![](/assets/job_email_config.png)
  
-### 立即运行
-邮件添加完整可以立即运行，运行失败点击点击debug按钮查看出错信息
+### Run immediately
+You can run the task after added a new job. Click the `debug button` to check the exception info.
 
 
