@@ -23,3 +23,4 @@
   - [发布日志](zh-cn/extra/releaseNote.md)
   - [系统升级](zh-cn/extra/updateApp.md)
   - [谁在使用CBoard](zh-cn/extra/customer.md)
+  - [致谢](zh-cn/extra/thanks.md)
