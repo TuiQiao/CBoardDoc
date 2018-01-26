@@ -9,7 +9,7 @@
 * 0.3升级了的`DataProvider`，以及变更了数据流处理逻辑，一方面`离线数据集聚合`不再在前端做聚合方面操作，数据聚合只在服务端进行（下图左）；另一方面对于某些超大规模计算与存储数据源，可选聚合下推数据源进而完全释放CBoard本身计算压力（下图右）
 
 <div class="t-alien-center">
-    <img src="../../assets/push-agg-down.png" style="width: 60%;"/>
+    <img src="assets/push-agg-down.png" style="width: 60%;"/>
 </div>
 
 ### 离线数据集聚合下推服务端
