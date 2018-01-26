@@ -25,15 +25,15 @@
     </thead>
     <tbody>
         <tr>
-            <td><img src="../../assets/Saiku_Rep.jpg" class="img-responsive" alt="Image"></td>
-            <td><img src="../../assets/saikuquery.jpg" class="img-responsive" alt="Image"></td>
+            <td><img src="/assets/Saiku_Rep.jpg" class="img-responsive" alt="Image"></td>
+            <td><img src="/assets/saikuquery.jpg" class="img-responsive" alt="Image"></td>
         </tr>
     </tbody>
 </table>
 
 ## 图表设计
 <div class="t-alien-center">
-    <img src="../../assets/config_widget.png" alt="Image">
+    <img src="/assets/config_widget.png" alt="Image">
     <p>图表设计功能区</p>
 </div>
 
@@ -50,9 +50,11 @@
 * 查询区默认为选择已经保存的数据集\(Cube\)
 * 下方两个功能按钮分别为切换查询方式\(在数据集与新建AD-Hoc查询之间切换查询\)，加载数据（JDBC离线数据源数据会加载至服务端缓存，支持数据源聚合的连接对应的查询只会加载模型）
 * **【当前操作状态】**
-* **新建\(New\)**状态：新建状态下每次保存都会新建或者另存一个图表，方便连续设计不同粒度的不同展示形态的多张图表，当然也可以通过复制功能，复制之后再进入编辑
-* **注意**：新建状态下如果不需求图表名称，连续点击保存会提示重名错误
-* **编辑\(Edit\)**状态：修改保存至影响当前报表，可以重复点击保存
+    * **新建\(New\)**状态：新建状态下每次保存都会新建或者另存一个图表，方便连续设计不同粒度的不同展示形态的多张图表，当然也可以通过复制功能，复制之后再进入编辑
+    * **编辑\(Edit\)**状态：修改保存至影响当前报表，可以重复点击保存
+
+!> 新建状态下如果不修改图表名称，连续点击保存会提示重名错误
+
 #### 模型区
 * 模型区的层级结构\(Hierarchy\)需要在数据集设计页面提前定义，否则只能看到原始的可选列属性
 * 模型包含4个一级分类节点
