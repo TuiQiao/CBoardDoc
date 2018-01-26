@@ -1,1 +1,1 @@
-include: [_navbar.md, _coverpage.md]
+include: [_navbar.md, _sidebar.md, _coverpage.md, zh-cn/_sidebar.md, zh-cn/_navbar.md]
