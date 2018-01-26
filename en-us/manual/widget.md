@@ -172,7 +172,7 @@ Use row header and column header as nodes and value in data area as line weight.
 <div class="bs-callout bs-callout-warning" id="callout-focus-demo">
     <h4>Why does my Sankey Diagram have no hierarchy?</h4>
     <p>A lot of people ask why there is no hierarchy in the Sankey Chart. The answer is that the hierarchy of the Sankey is related to your data itself.</p>
-    Data `A -&gt; B 和 B -&gt; C`,  then B will be a intermediate layer.
+    Data include links `A->B and B->C`,  then `B` will be a intermediate layer.
     Note also that ECharts requires data and cannot be looped \(A-&gt;B..-&gt;A\)
 </div>
 
