@@ -25,15 +25,15 @@ Input the Repository of your `Saiku` as below
     </thead>
     <tbody>
         <tr>
-            <td><img src="/assets/Saiku_Rep.jpg" class="img-responsive" alt="Image"></td>
-            <td><img src="/assets/saikuquery.jpg" class="img-responsive" alt="Image"></td>
+            <td>![](/assets/Saiku_Rep.jpg)</td>
+            <td>![](/assets/saikuquery.jpg)</td>
         </tr>
     </tbody>
 </table>
 
 ## Design Widget
 <div class="t-alien-center">
-    <img src="/assets/config_widget.png" alt="Image">
+    ![](/assets/config_widget.png)
     <p>Widget Design Page</p>
 </div>
 
