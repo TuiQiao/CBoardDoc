@@ -191,3 +191,10 @@ One column for one circle on Radar.
 
 ![](/assets/Chart_Bubble.png)
 
+#### Contrast
+| Design District | chart | requirement |
+| :--- | :--- | :--- |
+| Row dimension | Y-axis | Only one dimension node can be placed |
+| Value | X-axis | Only two index nodes can be placed |
+
+![](/assets/chart_contrast.png)
