@@ -177,6 +177,7 @@ Use row header and column header as nodes and value in data area as line weight.
 </div>
 
 #### Radar
+
 One column for one circle on Radar.
 
 ![](/assets/Chart_Radar.png)
@@ -191,3 +192,11 @@ One column for one circle on Radar.
 
 ![](/assets/Chart_Bubble.png)
 
+#### Contrast
+
+| Design District | chart | requirement |
+| :--- | :--- | :--- |
+| Row dimension | Y-axis | Only one dimension node can be placed |
+| Value | X-axis | Only two index nodes can be placed |
+
+![](/assets/chart_contrast.png)
