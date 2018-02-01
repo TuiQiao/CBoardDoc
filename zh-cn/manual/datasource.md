@@ -8,6 +8,7 @@
         <li>Kylin 1.6 (原生读取kylin Model，根据用户拖拽生成查询SQL)</li>
         <li>TextFile (文本文件，文本需要存放于CBoard应用服务器上面，读取本地文件)</li>
         <li>Saiku2.x (读取Saiku图表数据而非集成Saiku生成图表)</li>
+        <li>Solr4.x, 5.x (读取Solr collection，根据用户拖拽生成Solr查询语法，4.x无法使用后台聚合功能)</li>
     </ul>
 </div>
 
