@@ -23,7 +23,12 @@ If you have knowledge of JDBC, you know it doesn't make sense. `Basically, all r
 
 ### Presto
 **Presto can also be connected through JDBC**. The raw JDBC solution of Presto <mark>has no auth function</mark>，just leave the username and password as blank.
-![](des /assets/datasource-presto.png)
+![](/assets/datasource-presto.png)
+
+### Impala
+**Impala can also be connected through JDBC**,Impala JDBC Connection Driver can be Impala Driver `com.cloudera.impala.jdbc4.Driver`, can also be Hive Driver `org.apache.hive.jdbc.HiveDriver`.</p>
+Impala Driver no auth URL `jdbc:impala://localhost:21050/default`, auth URL `jdbc:impala://localhost:21050/default;AuthMech=3`.</p>
+Hive Driver no auth URL `jdbc:hive2://localhost:10000/default;auth=noSasl`, auth URL `jdbc:hive2://localhost:10000/default`.
 
 ### About Hive and Spark
 Hive and spark-sql can connected through JDBC, but due to the high latency of interactive query, both of them are not recommend use as data source
