@@ -27,6 +27,12 @@
 另外，**Presto也是通过JDBC的方式连接**。Presto的JDBC连接认证**没有用户名密码认证机制**，用户名和密码输入留空即可。
 ![](/assets/datasource-presto.png)
 
+### Impala
+**Impala也是通过JDBC的方式连接**，Impala的JDBC连接驱动可以是Impala自己的驱动`com.cloudera.impala.jdbc4.Driver`
+，也可以是Hive的驱动`org.apache.hive.jdbc.HiveDriver`。</p>
+使用Impala驱动时无认证的URL为`jdbc:impala://localhost:21050/default`，有认证的URL为`jdbc:impala://localhost:21050/default;AuthMech=3`。</p>
+使用Hive驱动时无认证的URL为`jdbc:hive2://localhost:10000/default;auth=noSasl`，有认证的URL为`jdbc:hive2://localhost:10000/default`。
+
 ### 关于Hive和Spark
 理论上Hive、Spark-SQL也可以通过JDBC的方式连接，考虑到二者执行效率都不是太高不适合做及时交互查询引擎。不推荐引入
 
