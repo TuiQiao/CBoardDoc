@@ -200,3 +200,38 @@ One column for one circle on Radar.
 | Value | X-axis | Only two index nodes can be placed |
 
 ![](/assets/chart_contrast.png)
+
+#### Word Cloud
+
+The cartesian product is labeled according to multiple rows.
+
+![](/assets/chart_wordcloud.png)
+
+#### Tree Map
+
+| Design District | chart | requirement |
+| :--- | :--- | :--- |
+| Row dimension | Multiple row dimensions represent multiple layers, which are classified by color | Place one or more dimension nodes |
+| Value | The area is the number  | Only one index nodes can be placed|
+
+![](/assets/chart_treemap.jpg)
+
+#### Heat Map
+
+| Design District | chart | requirement |
+| :--- | :--- | :--- |
+| Row dimension | X-axis | Place one or more dimension nodes |
+| Column | classify | Place zero or more dimension nodes |
+| Value | | Only one index nodes can be placed |
+
+![](/assets/chart_calender.png)
+
+#### Relation
+
+| Design District | chart | requirement |
+| :--- | :--- | :--- |
+| Row dimension | center point sets | Place one or two dimension nodes |
+| Column | classify | Place one or two dimension nodes |
+| Value |  | Only one index nodes can be placed |
+
+![](/assets/chart_relation.png)
