@@ -40,11 +40,11 @@ SELECT CUSTOMER_ID, PRODUCT_ID ,COUNT(__view__.TIME_ID)
  GROUP BY CUSTOMER_ID, PRODUCT_ID
 ```
 
-![](../../../assets/select-2.png)
+![](../../assets/select-2.png)
 
 ---
 
 ## 整体优化路线图★
 
-![](../../../assets/tunning-roadmap.png)
+![](../../assets/tunning-roadmap.png)
 

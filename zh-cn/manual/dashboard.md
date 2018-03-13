@@ -26,17 +26,17 @@
 
 ### 节点展开状态
 
-![](../../../assets/TimeLineBoard.png)
+![](../../assets/TimeLineBoard.png)
 
 ### 节点收起状态
 
-![](../../../assets/timeline_collapse.png)
+![](../../assets/timeline_collapse.png)
 
 ## 看板参数
 
 v0.2新增面板参数功能，利用面板参数可以在Dashboard展示页面支持用户数据交互；面板参数实质是关联在当前看板包含图表的数据集或者查询的列之上
 
-v0.3.2新增滑动条交互的参数![](../../../assets/config_param_slider.png)
+v0.3.2新增滑动条交互的参数![](../../assets/config_param_slider.png)
 
 * 我们在使用Elasticsearch展示实时数据时，发现需要使用到时间戳作为查询参数，而时间戳是连续变量，而且值内容相对可以预判，没有必要从数据源查询获取，而且select的交互方式不太直观，这促使我们加入了滑动条参数交互
 * 滑动条的序列值是自动生成的**数字**，数字能够用作时间戳格式化为日期字符串
@@ -52,7 +52,7 @@ v0.3.2新增滑动条交互的参数![](../../../assets/config_param_slider.png)
 
 ### 下拉ParamType\(交互类型\)选择Slider
 
-![](../../../assets/slider_param.png)
+![](../../assets/slider_param.png)
 
 ### 利用面板参数实现不同数据集之前的联动
 
@@ -69,7 +69,7 @@ v0.3.2新增滑动条交互的参数![](../../../assets/config_param_slider.png)
 
 ## 参数模板
 
-![](../../../assets/board_param_template.png)
+![](../../assets/board_param_template.png)
 
 当看板参数过多的，或者参数成员组成比较复杂的时候，可以把当前参数保存为模板。第二次登陆，或者会话过期之后可以快速加载参数
 看板参数绑定和用户绑定，每个用户可以保存自己特定的参数模板

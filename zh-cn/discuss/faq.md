@@ -8,7 +8,7 @@
 - GitHub Issue可用固化为知识库，支持搜索、可被Google检索
 - 在访问Github网络通畅的情况下，首推在GitHub上面通过issue的形式问题交流
 - 在提问之前搜索相关问题是否被问及过，进入issue页面，删除默认搜索条件<code>is:issue is:open </code>，输入查询关键词
-![issue-search](../../../assets/search-issue.png)
+![issue-search](../../assets/search-issue.png)
 - 确认需要新建issue，请严格按照issue模板填写相关问题描述，否则问题很可能将不会得到答复
 
 <a href="https://github.com/yzhang921/CBoard/issues"><button type="button" class="btn btn-primary btn-sm">确认去提问</button></a>

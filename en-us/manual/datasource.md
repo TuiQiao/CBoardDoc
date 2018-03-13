@@ -14,16 +14,16 @@
 
 Operation path like this：
 
-![](../../../assets/new_datasource.png)
+![](../../assets/new_datasource.png)
 
 ## 1 JDBC
 Be more honest, we don't wanna to list all kinds of database products that support standard JDBC connection.
 If you have knowledge of JDBC, you know it doesn't make sense. `Basically, all relational databases can be connected.` Maybe there are some compatible bugs due to syntax, but it's easy to fix. If you came across any this kind of bugs, don't hesitate to create an issue, we'll support to fix it.
-![](../../../assets/jdbc-datasource.png)
+![](../../assets/jdbc-datasource.png)
 
 ### Presto
 **Presto can also be connected through JDBC**. The raw JDBC solution of Presto <mark>has no auth function</mark>，just leave the username and password as blank.
-![](../../../assets/datasource-presto.png)
+![](../../assets/datasource-presto.png)
 
 ### About Hive and Spark
 Hive and spark-sql can connected through JDBC, but due to the high latency of interactive query, both of them are not recommend use as data source
@@ -62,7 +62,7 @@ In order to leverage the power of kylin datasource, it'd would be better to 
 
 !> If you choose to use kylin query result as offline data, it's very important to control the size of result dataset.
 
-![image](../../../assets/6d91308c-c2cb-11e6-8366-3422662c0837.png)
+![image](../../assets/6d91308c-c2cb-11e6-8366-3422662c0837.png)
 
 <div class="bs-callout bs-callout-warning">
     <h4>Why the result on subquery in kylin1.6 is not correct</h4>
@@ -76,15 +76,15 @@ Kylin 2.x will be supported in `version 0.5`, coming soon...
 
 !> Aggregation can only be done in data source when use native Kylin as `datasource`.
 
-![](../../../assets/kylin-native-datasource.png)
+![](../../assets/kylin-native-datasource.png)
 
 ## 3 Elasticsearch
 
 Elasticsearch is born for search. Nowadays more and more companies start to use it as analytical data source. Before version 5, Kibana can hardly meet the multi dimension analytic requirements. Although, after version 5, Kibana has ability to split metric by dimension. For calculated metric after aggregation, usually use to calculate convert rate, K5 can’t handle.（P.S. Maybe I have not been proficient in kibana, correct me if I were wrong）
-![](../../../assets/es-datasource.png)
+![](../../assets/es-datasource.png)
 
 ### Test Connection
-![](../../../assets/ds-test-es.png)
+![](../../assets/ds-test-es.png)
 
 ## 4 Saiku2.x
 
@@ -92,14 +92,14 @@ CBoard can read result data before Saiku2.6 through it's restful interface. Du
 
 People who are familiar with Saiku known that the result of Saiku report always is a cross table with multilevel row header and column header. How does CBoard reuse this table.
 
-![](../../../assets/saiku_crtbl.png)  
+![](../../assets/saiku_crtbl.png)  
 The answer is all the row level will be combined as one line header. Out put columns of above cross table as below:
 
-![](../../../assets/saiku_crtbl_header.png)
+![](../../assets/saiku_crtbl_header.png)
 
 ## 5 TextFile DataSource
 
 For CBoard can only read local file that located at the same server as CBoard application. User can setup a ftp server to maintenance and upload your data file by yourself.
 
-![](../../../assets/datasource-textfile.png)
+![](../../assets/datasource-textfile.png)
 

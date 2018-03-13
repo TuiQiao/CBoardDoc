@@ -28,11 +28,11 @@ It is recommended that be supervised and maintained by super administrators.
 
 ### Node unfold state
 
-![](../../../assets/TimeLineBoard.png)
+![](../../assets/TimeLineBoard.png)
 
 ### Node fold state
 
-![](../../../assets/timeline_collapse.png)
+![](../../assets/timeline_collapse.png)
 
 ## Dashboard parameter
 
@@ -40,7 +40,7 @@ The feature of dashboard parameters were added in version 0.2, it can be used to
 Panel parameters are essentially linked with the column of the data set or a query that in this Dashboard.
 
 Slide type parameter is added in v0.3.2
-![](../../../assets/config_param_slider.png)
+![](../../assets/config_param_slider.png)
 
 * We use the `Elasticsearch` for displaying real-time data, found the timestamp as a query parameter, but the timestamp is a continuous variable but the value of relative content can predict. so there is no need to get the time range from  query. Also interaction on `selector` is not intuitive, which prompted us to add the `slider type` interaction parameter
 * the sequence value of a `slider` is an automatically generated number, and the number can be used as a timestamp and formatted as a date string
@@ -55,7 +55,7 @@ Slide type parameter is added in v0.3.2
     * Timestamp interaction does not have to set `value format`
     * Date type have to set `value format`
 
-![](../../../assets/slider_param.png)
+![](../../assets/slider_param.png)
 
 ### Charts linked with parameter
 
@@ -69,7 +69,7 @@ After select the type of operation  (>, <, > =, < =, =, =, range) that for setti
 ![case4-useparam](https://cloud.githubusercontent.com/assets/6037522/21478021/73f81fe8-cb82-11e6-95ea-d98b43a4abf2.gif)
 
 ## Save parameter template
-![](../../../assets/board_param_template.png)
+![](../../assets/board_param_template.png)
 
 When the dashboard parameters are too much, or when the group of the parameter`s member is very complex, you can save the current parameters as a template.
 Then, next time after login, you can quickly reload back the parameters, bind dashboard parameter and bind with user, each user can save his specific parameter template.
