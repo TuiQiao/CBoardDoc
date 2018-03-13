@@ -199,4 +199,4 @@ One column for one circle on Radar.
 | Row dimension | Y-axis | Only one dimension node can be placed |
 | Value | X-axis | Only two index nodes can be placed |
 
-![](/assets/chart_contrast.png)
+![](../../assets/chart_contrast.png)
