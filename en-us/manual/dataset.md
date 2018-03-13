@@ -41,7 +41,7 @@ All columns in the schema tree can support set <kbd>alias</kbd>
 * <kbd>Add a hierarchy, modify the hierarchy name</kbd>, and then drag the corresponding column to the hierarchy group node
 * Hierarchy is the precondition to do chart drill down and roll up
 
-![image](/assets/schema.png)
+![image](../../assets/schema.png)
 
 ## 2 Calculated Measures
 
@@ -50,23 +50,23 @@ Eg: Math.log\(sum\(columnA\)/count\(columB\)\)
 * Use input suggestion
 * Calculated Measures can’t be edit during widget design
 
-![image](/assets/952a5bfc-c2ce-11e6-89c9-fd15b514c173.png)
+![image](../../assets/952a5bfc-c2ce-11e6-89c9-fd15b514c173.png)
 
 ## 3 Filter Group
 
 Filter can be used as dynamic time windows. Select a expression template and then edit size of the window.
-![](/assets/pre-filter.png)
+![](../../assets/pre-filter.png)
 
 ## 4 Additional specification
 
 ### 4.1 Kylin Native
-![image](/assets/KylinDataSet.png)
+![image](../../assets/KylinDataSet.png)
 
 !> You’d better to have basic knowledge of how kylin works.
 
 
 ### 4.2 Elasticsearch
-![](/assets/es_dataset.png)
+![](../../assets/es_dataset.png)
 
 ?>In order to reduce the dependency of Elasticsearch driver jar, CBoard choose to use `restful` + `DSL query` solution to send query to elastic. So you should be better to have some knowledge of DSL syntax for `dataset` configuration. <br/>
 `Type` input of ES query is required. `Index name` can be set to a wildcard. <br/>
@@ -80,7 +80,7 @@ Refer Elasticsearch official document for detail introduction [Bucket Aggregatio
 2. `number_range`: Number Range Aggregation
 3. `number_hist`：Number Histogram Aggregation
 
-![](/assets/es-override.png)
+![](../../assets/es-override.png)
 
 Override json structure as below (You can override multiple columns’ aggregations by one time writing):
 ```json
@@ -127,7 +127,7 @@ Aggregate timestamp (long integer data type by default) by every 10 minutes and 
 #### 4.2.2 Add multiple bucket setting on a column (Custom)
 In section 4.2.1, we explained how to add a global aggregation overwrite on ES index. You can only add multiple aggregation strategies to one column in schema tree node.
 
-![](/assets/selects_custom_override.png)
+![](../../assets/selects_custom_override.png)
 
 ```json
 {
@@ -163,11 +163,11 @@ count("{
 }")
 ```
 
-![](/assets/ES-CM.png)
+![](../../assets/ES-CM.png)
 
 !> CBoard prepared some input suggestions to improve user experience
 
-![](/assets/es-cm-completer.png)
+![](../../assets/es-cm-completer.png)
 
 ## 5 Realtime dataset
 Input a integer number as interval seconds to reload dataset when dashboard is presented.

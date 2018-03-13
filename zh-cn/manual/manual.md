@@ -95,10 +95,10 @@ mvn clean package
 
 ## 6 基本步骤
 
-![](/assets/use-steps.png)
+![](../../assets/use-steps.png)
 
 ## 7 项目启动，进去数据源管理界面确认一下样本数据源是否配置正确
-![](/assets/demo_datasource.png)
+![](../../assets/demo_datasource.png)
 
 
 #
@@ -240,16 +240,16 @@ preferredLanguage: "en" // en/cn: Switch language to Chinese
 * Saiku2.x \(读取Saiku图表数据而非集成Saiku生成图表\)
 
 操作路径图如下：
-![](/assets/new_datasource.png)
+![](../../assets/new_datasource.png)
 
 ## 1 JDBC数据源
 
 我们来点实际的，在此我们不纯粹为了宣传而罗列各种数据库产品，懂JDBC原理的都知道没有意义。基本上所有RMDB都能支持，或许会存在一点点语法兼容问题，但是修改起来都比较简单。遇到后台日志抛语法错误异常请在github上面提issue，附上详细的异常日志，和操作步骤，我们会协助解决，更加欢迎提PR合并解决方案到我们的版本。
 目前我们生产环境上连接的是MySQL和SQLServer。
-![](/assets/jdbc-datasource.png)
+![](../../assets/jdbc-datasource.png)
 
 另外，**Presto也是通过JDBC的方式连接**。Presto的JDBC连接认证**没有用户名密码认证机制**，用户名和密码输入留空即可。
-![](/assets/datasource-presto.png)
+![](../../assets/datasource-presto.png)
 
 理论上Hive、Spark-SQL也可以通过JDBC的方式连接，考虑到二者执行效率都不是太高不适合做及时交互查询引擎。不推荐引入
 
@@ -295,16 +295,16 @@ JdbcUrl：jdbc:kylin://<host>:<port>/<project>
 
 0.3版本之后支持连接Kylin1.6原生通过restful接口读取解析Kylin数据模型，kylin2.0由于返回的json元数据定义有所改动，我们公司内部版本还停留在1.6，所以暂时只支持到1.6版本。
 **原生连接模式下聚合操作只会再数据源进行。**
-![](/assets/kylin-native-datasource.png)
+![](../../assets/kylin-native-datasource.png)
 
 ## 3 Elasticsearch
 
 为搜索而生的ES，最近几年在数据分析领域使用得越来越广，Kibana5之前的版本基本不具备多维分析功能，Kibana5具备了简单的指标分组split metric功能，但是还是缺少不同聚合指标的计算功能（常用于计算转化率与占比之类的需求）（P.S. 或许是本人还不会用，有说错的地方请指正），所以CBoard0.3版本更新特意在原计划之外评估比较和Saiku3数据源的支持之后决定选择先支持ES。  
 ### ES 数据源配置
-![](/assets/es-datasource.png)
+![](../../assets/es-datasource.png)
 
 ### 连通性测试
-![](/assets/ds-test-es.png)
+![](../../assets/ds-test-es.png)
 
 ## 4 Saiku2.x
 
@@ -321,7 +321,7 @@ CBoard实现了对Saiku2.6的数据源连接，Saiku3.x的Restful接口相比2.6
 
 文本数据只能读取CBoard应用服务器本地文件，使用者需要自己架设ftp服务器单独维护文本文件的上传与管理。
 
-![](/assets/datasource-textfile.png)
+![](../../assets/datasource-textfile.png)
 
 #
 数据集管理
@@ -368,7 +368,7 @@ GROUP BY a, b, c, e, f, g
 * 添加层级、修改层级名，之后拖拽相应的列到层级组节点下
 * 层级是图表下钻基础
 * 计算表达式和过滤组只能点击添加新建
-![image](/assets/schema.png)
+![image](../../assets/schema.png)
 
 ## 2 预定义聚合表达式
 
@@ -381,13 +381,13 @@ GROUP BY a, b, c, e, f, g
 ## 3 预定义漏斗（过滤器）
 
 用于预定义动态日期窗口，点击下拉选择动态时间表达式模板，模板中的值可以编辑文本。用户可根据自己的需求改成任意大小时间窗口。
-![](/assets/pre-filter.png)
+![](../../assets/pre-filter.png)
 
 ## 4 特殊数据集的查询定义说明
 
 ### 4.1 Kylin Native
 
-![image](/assets/KylinDataSet.png)
+![image](../../assets/KylinDataSet.png)
 使用Kylin数据源之前需对Kylin基本原理有所了解。
 需要填写项, 以及解释如下：
 Kylin Project：对应Kylin本身的Project
@@ -395,7 +395,7 @@ Data Model：对应Kylin Model
 
 ### 4.2 Elasticsearch
 
-![](/assets/es_dataset.png)
+![](../../assets/es_dataset.png)
 为了减少对ES版本以及第三方ES库的依赖，CBoard采取restful + DSL连接与查询模式。所以ES的使用需要使用者（尤其是建模者）对ES基本概念有所了解，之外还需要掌握一些DSL语法。
 ES查询需要参数需要精确到Type，Index名称可使用通配符原理与ES DSL查询URL参数一样。
 由于ES里面存储的数据大多为明细数据，时间维度聚合的时候粒度需要调整为时间段（date\_histgram），而默认的聚合级别为term也就是关键词，所以在使用时间维度聚合之前需要调整聚合粒度。
@@ -405,7 +405,7 @@ ES查询需要参数需要精确到Type，Index名称可使用通配符原理与
 CBoard提供了三类常见的聚合Bulket覆盖辅助输入，具体可配置参数请参考官方文档[Bucket Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket.html)
 1. date\_hist: 日期类型直方图聚合
 2. number\_range: 数字区间聚合
-3. number\_range：数字直方图![](/assets/es-override.png)
+3. number\_range：数字直方图![](../../assets/es-override.png)
 
 ```json
 语法如下(可以重复覆盖多个列的聚合):
@@ -453,7 +453,7 @@ CBoard提供了三类常见的聚合Bulket覆盖辅助输入，具体可配置�
 
 在4.2.1中的聚合覆盖设置在数据集查询之上，相当于全局查询列聚合覆盖；同时如果想对一个列采取多种分桶策略，可以在Schema树上多次引用可选列，然后编辑custom信息
 
-![dd](/assets/selects_custom_override.png)
+![dd](../../assets/selects_custom_override.png)
 
 ```json
 {
@@ -490,9 +490,9 @@ count("{
 }")
 ```
 
-![](/assets/ES-CM.png)
+![](../../assets/ES-CM.png)
 CBoard也内建了一些常用过过滤器输入辅助
-![](/assets/es-cm-completer.png)
+![](../../assets/es-cm-completer.png)
 
 ## 准实时数据集
 
@@ -527,7 +527,7 @@ CBoard也内建了一些常用过过滤器输入辅助
 
 ## 图表设计
 
-![](/assets/config_widget.png)
+![](../../assets/config_widget.png)
 
 * **【图表列表区】**
 * 显示已保保存的图表
@@ -549,7 +549,7 @@ CBoard也内建了一些常用过过滤器输入辅助
 * 模型包含4个一级分类节点
 * **维度\(Dimensions\)**
 * 层级下面的列在支持下钻的图表组件下面可以进行下钻/上卷操作
-![](/assets/drill_table.gif)
+![](../../assets/drill_table.gif)
 * **度量\(Measures\)**
 * **二次计算指标\(Calulated Measures\)**
 * 预先定义： 数据集预先定义只能使用，不能修改，不能查看具体内容；数据集上对指标进行修改会影响图表；数据集中删除已经在图表中使用的指标会导致图表运行失败
@@ -587,15 +587,15 @@ OLAP多维分析的数据理论上都基于多维数据，多个序列加上相�
 * 对应关系如下图所示，交叉表的表头合并只有在表头排序正确的情况下才能正确合并
 * 开始图表设计之前请先理解此处的对应关系。后续所有图表对应的数据都和交叉表相关
 
-![](/assets/cross_table.png)
+![](../../assets/cross_table.png)
 
 ### 维度过滤/切片排序
 
 * 放置在**行维**与**列维**上面的**胶囊**点击编辑按钮可以进行数据过滤
 * 也可以放置**维度**在**过滤**栏单纯对数据进行过滤
 * 为了防止某个维度下面成员数量过大，或者误把连续值如时间戳之类的维度不经处理直接放置在维度框，引起服务端数据源查询压力过大，所以再加载维度成员之前加入了确认操作
-![](/assets/filter.png)
-![](/assets/Range_Filter.png)
+![](../../assets/filter.png)
+![](../../assets/Range_Filter.png)
 * 过滤比较只支持字符串和数值型比较，由于不同数据库的时间函数处理不一样，但是大多数数据库的时间都能与一个标准的日期字符串进行比较，可能某些数据库会有由于数据类型转换引起的索引失效，这里没有特殊处理，请数据准备的时候在这块进行一些预处理，时刻使用预览查询进行调试
 * 值上的列也可以排序和过滤（0.3之后）
 * 支持输入值域范围比较
@@ -607,7 +607,7 @@ OLAP多维分析的数据理论上都基于多维数据，多个序列加上相�
 ### 柱线图
 
 每列显示显示为一条线，或者一个柱形图序列。柱线图有着很多的图形类别，如百分比堆叠图、折线堆叠图、折线面积图等。
-![](/assets/line_bar.png)
+![](../../assets/line_bar.png)
 
 | 设计区 | 图表 | 要求 |
 | :--- | :--- | :--- |
@@ -621,7 +621,7 @@ OLAP多维分析的数据理论上都基于多维数据，多个序列加上相�
 
 每列显示一个饼图
 
-![](/assets/chart_pie.png)
+![](../../assets/chart_pie.png)
 
 | 设计区 | 图表 | 要求 |
 | :--- | :--- | :--- |
@@ -641,11 +641,11 @@ KPI输入没有维度信息，只有**一个度量值**，可选择颜色和数�
 行里面的值会按大小自动排序之后形成漏斗
 **所以漏斗图一行一个漏斗**， 下面的Demo没有实际意义，仅仅作为演示说明
 
-![](/assets/chart_funnel.png)
+![](../../assets/chart_funnel.png)
 
 ### 桑基图
 
-![](/assets/Sanky.png)
+![](../../assets/Sanky.png)
 
 以行值和列值为节点，单元格为**行到列**的连接进行画图，交叉表可以视为一个连接矩阵
 有很多人问为什么自己的桑吉图没有层级，其实桑基图的层级和你的数据本身有关
@@ -655,7 +655,7 @@ A -&gt; B 和 B -&gt; C， B为中间层，就会自动适配出两层
 
 ### 雷达图
 
-一列数据在雷达上绘制一个网 ![](/assets/Chart_Radar.png)
+一列数据在雷达上绘制一个网 ![](../../assets/Chart_Radar.png)
 
 ### 气泡图
 
@@ -665,7 +665,7 @@ A -&gt; B 和 B -&gt; C， B为中间层，就会自动适配出两层
 | 列维 | 分类 | 放置0个或者多个维度节点 |
 | 值 | Y轴、气泡大小、颜色深度 | 每个指标节点对应一个属性 |
 
-![](/assets/Chart_Bubble.png)
+![](../../assets/Chart_Bubble.png)
 
 #### 对比图
 
@@ -740,17 +740,17 @@ A -&gt; B 和 B -&gt; C， B为中间层，就会自动适配出两层
 
 ### 节点展开状态
 
-![](/assets/TimeLineBoard.png)
+![](../../assets/TimeLineBoard.png)
 
 ### 节点收起状态
 
-![](/assets/timeline_collapse.png)
+![](../../assets/timeline_collapse.png)
 
 ## 看板参数
 
 v0.2新增面板参数功能，利用面板参数可以在Dashboard展示页面支持用户数据交互；面板参数实质是关联在当前看板包含图表的数据集或者查询的列之上
 
-v0.3.2新增滑动条交互的参数![](/assets/config_param_slider.png)
+v0.3.2新增滑动条交互的参数![](../../assets/config_param_slider.png)
 
 * 我们在使用Elasticsearch展示实时数据时，发现需要使用到时间戳作为查询参数，而时间戳是连续变量，而且值内容相对可以预判，没有必要从数据源查询获取，而且select的交互方式不太直观，这促使我们加入了滑动条参数交互
 * 滑动条的序列值是自动生成的**数字**，数字能够用作时间戳格式化为日期字符串
@@ -766,7 +766,7 @@ v0.3.2新增滑动条交互的参数![](/assets/config_param_slider.png)
 
 ### 下拉ParamType\(交互类型\)选择Slider
 
-![](/assets/slider_param.png)
+![](../../assets/slider_param.png)
 
 ### 利用面板参数实现不同数据集之前的联动
 
@@ -783,7 +783,7 @@ v0.3.2新增滑动条交互的参数![](/assets/config_param_slider.png)
 
 ## 参数模板
 
-![](/assets/board_param_template.png)
+![](../../assets/board_param_template.png)
 
 当看板参数过多的，或者参数成员组成比较复杂的时候，可以把当前参数保存为模板。第二次登陆，或者会话过期之后可以快速加载参数
 看板参数绑定和用户绑定，每个用户可以保存自己特定的参数模板
@@ -818,17 +818,17 @@ v0.3.2新增滑动条交互的参数![](/assets/config_param_slider.png)
 
 ### 节点展开状态
 
-![](/assets/TimeLineBoard.png)
+![](../../assets/TimeLineBoard.png)
 
 ### 节点收起状态
 
-![](/assets/timeline_collapse.png)
+![](../../assets/timeline_collapse.png)
 
 ## 看板参数
 
 v0.2新增面板参数功能，利用面板参数可以在Dashboard展示页面支持用户数据交互；面板参数实质是关联在当前看板包含图表的数据集或者查询的列之上
 
-v0.3.2新增滑动条交互的参数![](/assets/config_param_slider.png)
+v0.3.2新增滑动条交互的参数![](../../assets/config_param_slider.png)
 
 * 我们在使用Elasticsearch展示实时数据时，发现需要使用到时间戳作为查询参数，而时间戳是连续变量，而且值内容相对可以预判，没有必要从数据源查询获取，而且select的交互方式不太直观，这促使我们加入了滑动条参数交互
 * 滑动条的序列值是自动生成的**数字**，数字能够用作时间戳格式化为日期字符串
@@ -844,7 +844,7 @@ v0.3.2新增滑动条交互的参数![](/assets/config_param_slider.png)
 
 ### 下拉ParamType\(交互类型\)选择Slider
 
-![](/assets/slider_param.png)
+![](../../assets/slider_param.png)
 
 ### 利用面板参数实现不同数据集之前的联动
 
@@ -861,7 +861,7 @@ v0.3.2新增滑动条交互的参数![](/assets/config_param_slider.png)
 
 ## 参数模板
 
-![](/assets/board_param_template.png)
+![](../../assets/board_param_template.png)
 
 当看板参数过多的，或者参数成员组成比较复杂的时候，可以把当前参数保存为模板。第二次登陆，或者会话过期之后可以快速加载参数
 看板参数绑定和用户绑定，每个用户可以保存自己特定的参数模板

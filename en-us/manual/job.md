@@ -24,7 +24,7 @@ mail.smtp.from=test@test.com
 * Active Range
 * Every (Frequency)
 
-![](/assets/add_job.png) 
+![](../../assets/add_job.png) 
 
 ### E-mail configuration content
 * Receiver(required)/CC/BCC/subject
@@ -34,7 +34,7 @@ mail.smtp.from=test@test.com
     * **Image**：By screen shoot in E-mail
     * **Both**：
     
-![](/assets/job_email_config.png)
+![](../../assets/job_email_config.png)
  
 ### Run immediately
 You can run the task after added a new job. Click the `debug button` to check the exception info.

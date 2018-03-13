@@ -12,5 +12,5 @@
 * 利用非增量授权原理，可以<mark>取消授权</mark>
 * CTRL+鼠标左键多选
 
-![](/assets/share_resource.png)
+![](../../assets/share_resource.png)
 

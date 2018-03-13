@@ -25,7 +25,7 @@ mail.smtp.from=test@test.com
 * 任务有效期
 * 周期
 
-![](/assets/add_job.png) 
+![](../../assets/add_job.png) 
 
 ### 配置邮件内容
 * 收件人(必填)/抄送/密送/邮件主题
@@ -35,7 +35,7 @@ mail.smtp.from=test@test.com
     * **Image**：看板以页面截图形式在邮件正文展示
     * **Both**：两种形式共存
     
-![](/assets/job_email_config.png)
+![](../../assets/job_email_config.png)
  
 ### 立即运行
 邮件添加完整可以立即运行，运行失败点击点击debug按钮查看出错信息

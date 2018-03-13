@@ -2,7 +2,7 @@
 
 `RBAC` is short for Role Based Access Control. It consists of three parts: `User`, `Role`, `Operation/Resource`. Access list, also known as resource list, is assigned to the role group, grant Users one or more Roles to allow users to get resource access rights of their group.
 
-![](/assets/RBAC.png)
+![](../../assets/RBAC.png)
 
 The user management interface that corresponds to the CBoard is also divided into three pieces
 
@@ -44,7 +44,7 @@ The user management interface that corresponds to the CBoard is also divided int
 </div>
 
 
-![](/assets/UserAdmin_Snap.png)
+![](../../assets/UserAdmin_Snap.png)
 
 
 

@@ -25,15 +25,15 @@ Input the Repository of your `Saiku` as below
     </thead>
     <tbody>
         <tr>
-            <td>![](/assets/Saiku_Rep.jpg)</td>
-            <td>![](/assets/saikuquery.jpg)</td>
+            <td>![](../../assets/Saiku_Rep.jpg)</td>
+            <td>![](../../assets/saikuquery.jpg)</td>
         </tr>
     </tbody>
 </table>
 
 ## Design Widget
 <div class="t-alien-center">
-    ![](/assets/config_widget.png)
+    ![](../../assets/config_widget.png)
     <p>Widget Design Page</p>
 </div>
 
@@ -66,7 +66,7 @@ Input the Repository of your `Saiku` as below
     * `Calculated Measures`: need Pre-defined, can only be used, can not be modified
     * `Filter`
 
-![](/assets/drill_table.gif)
+![](../../assets/drill_table.gif)
 
 
 #### Design area
@@ -107,7 +107,7 @@ In theory, multi-dimensional analysis is based on multi-dimensional data, multip
 !> Please make sure you have get what's cross table and how to design a cross table before Go Ahead!
 
 
-![](/assets/cross_table.png)
+![](../../assets/cross_table.png)
 
 ### Slice and Spice
 
@@ -116,8 +116,8 @@ In theory, multi-dimensional analysis is based on multi-dimensional data, multip
 
 !> Make sure you are not loading a large size list or continuous value before load dimension members!
 
-![](/assets/filter.png)
-![](/assets/Range_Filter.png)
+![](../../assets/filter.png)
+![](../../assets/Range_Filter.png)
 * <mark>Filtering comparisons only support string and numeric comparison</mark>, because time functions differ from database to database, but most database `datetime` data type can be compared to a standard date string. Some databases may have index invalidation due to data type conversion. As of now, there is no special processing on datatime dimension here, please do some pre-processing on this piece while the data is ready, and debug with preview query at all times.
 * Columns on values can also be sorted and filtered
 * Support for input range comparison
@@ -130,7 +130,7 @@ In theory, multi-dimensional analysis is based on multi-dimensional data, multip
 #### Bar/Line Chart
 
 One column for one line for a series bar.
-![](/assets/line_bar.png)
+![](../../assets/line_bar.png)
 
 
 | Design District | Chart | requirement |
@@ -147,7 +147,7 @@ One column for one line for a series bar.
 
 One column for a pie chart
 
-![](/assets/chart_pie.png)
+![](../../assets/chart_pie.png)
 
 #### KPI card
 
@@ -161,11 +161,11 @@ Normally, a funnel needs to be displayed such as `display -> click -> submit -> 
 The values in the row are sorted automatically by size to form a funnel.
 ** So a row of funnels, a funnel. **, The following Demo makes no real sense, just as a demonstration
 
-![](/assets/chart_funnel.png)
+![](../../assets/chart_funnel.png)
 
 #### Sanky chart
 
-![](/assets/Sanky.png)
+![](../../assets/Sanky.png)
 
 Use row header and column header as nodes and value in data area as line weight. Crosstable can be considered as a joint-matrix for Sanky chart.
 
@@ -180,7 +180,7 @@ Use row header and column header as nodes and value in data area as line weight.
 
 One column for one circle on Radar.
 
-![](/assets/Chart_Radar.png)
+![](../../assets/Chart_Radar.png)
 
 #### Bubble diagram
 
@@ -190,7 +190,7 @@ One column for one circle on Radar.
 | Column | classify | Place zero or more dimension nodes |
 | Value | Y-axis, bubble size, color depth | One attribute per measure node |
 
-![](/assets/Chart_Bubble.png)
+![](../../assets/Chart_Bubble.png)
 
 #### Contrast
 
@@ -199,7 +199,7 @@ One column for one circle on Radar.
 | Row dimension | Y-axis | Only one dimension node can be placed |
 | Value | X-axis | Only two index nodes can be placed |
 
-![](/assets/chart_contrast.png)
+![](../../assets/chart_contrast.png)
 
 #### Word Cloud
 

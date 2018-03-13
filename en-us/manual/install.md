@@ -142,11 +142,11 @@ Default login username and passwor: admin/root123
 ### Check configuration of demo database
 !> In case of password leak, we would reload password when edit `datasource`. So every time when you want to modify `datasource`, you have to retype password again.
 
-![](/assets/demo_datasource.png)
+![](../../assets/demo_datasource.png)
 
 ## Operation road of CBoard
 
-![](/assets/use-steps.png)
+![](../../assets/use-steps.png)
 
 
 
