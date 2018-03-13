@@ -25,15 +25,15 @@
     </thead>
     <tbody>
         <tr>
-            <td><img src="/assets/Saiku_Rep.jpg" class="img-responsive" alt="Image"></td>
-            <td><img src="/assets/saikuquery.jpg" class="img-responsive" alt="Image"></td>
+            <td><img src="../../assets/Saiku_Rep.jpg" class="img-responsive" alt="Image"></td>
+            <td><img src="../../assets/saikuquery.jpg" class="img-responsive" alt="Image"></td>
         </tr>
     </tbody>
 </table>
 
 ## 图表设计
 <div class="t-alien-center">
-    <img src="/assets/config_widget.png" alt="Image">
+    <img src="../../assets/config_widget.png" alt="Image">
     <p>图表设计功能区</p>
 </div>
 
