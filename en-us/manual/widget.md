@@ -205,7 +205,7 @@ One column for one circle on Radar.
 
 The cartesian product is labeled according to multiple rows.
 
-![](/assets/chart_wordcloud.png)
+![](../../assets/chart_wordcloud.png)
 
 #### Tree Map
 
@@ -214,7 +214,7 @@ The cartesian product is labeled according to multiple rows.
 | Row dimension | Multiple row dimensions represent multiple layers, which are classified by color | Place one or more dimension nodes |
 | Value | The area is the number  | Only one index nodes can be placed|
 
-![](/assets/chart_treemap.jpg)
+![](../../assets/chart_treemap.jpg)
 
 #### Heat Map
 
@@ -224,7 +224,7 @@ The cartesian product is labeled according to multiple rows.
 | Column | classify | Place zero or more dimension nodes |
 | Value | | Only one index nodes can be placed |
 
-![](/assets/chart_calender.png)
+![](../../assets/chart_calender.png)
 
 #### Relation
 
@@ -234,4 +234,4 @@ The cartesian product is labeled according to multiple rows.
 | Column | classify | Place one or two dimension nodes |
 | Value |  | Only one index nodes can be placed |
 
-![](/assets/chart_relation.png)
+![](../../assets/chart_relation.png)

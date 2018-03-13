@@ -666,13 +666,13 @@ A -&gt; B 和 B -&gt; C， B为中间层，就会自动适配出两层
 | 行维 | Y轴 | 只能放置一个维度节点 |
 | 指标 | X轴左右两边 | 只能放置两个指标节点 |
 
-![](/assets/chart_contrast.png)
+![](../../assets/chart_contrast.png)
 
 ### 标签云
 
 根据多个行维生成笛卡尔积个标签。
 
-![](/assets/chart_wordcloud.png)
+![](../../assets/chart_wordcloud.png)
 
 ### 矩形树图
 
@@ -681,7 +681,7 @@ A -&gt; B 和 B -&gt; C， B为中间层，就会自动适配出两层
 | 行维 | 多个行维代表多层，用颜色来区分类目 | 放置一个或者多个维度节点 |
 | 指标 | 用面积来表示数值  | 放置1个指标节点|
 
-![](/assets/chart_treemap.jpg)
+![](../../assets/chart_treemap.jpg)
 
 ### 热点图
 
@@ -691,7 +691,7 @@ A -&gt; B 和 B -&gt; C， B为中间层，就会自动适配出两层
 | 列维 | 分类 | 放置0个或者多个维度节点 |
 | 指标 | | 放置1个指标节点 |
 
-![](/assets/chart_calender.png)
+![](../../assets/chart_calender.png)
 
 ### 关系图
 
@@ -701,7 +701,7 @@ A -&gt; B 和 B -&gt; C， B为中间层，就会自动适配出两层
 | 列维 | 分类 | 放置1个或者2个维度节点 |
 | 指标 |  | 放置1个指标节点 |
 
-![](/assets/chart_relation.png)
+![](../../assets/chart_relation.png)
 
 #
 看板设计

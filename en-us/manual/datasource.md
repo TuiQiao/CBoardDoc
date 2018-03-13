@@ -113,7 +113,7 @@ For CBoard can only read local file that located at the same server as CBoard ap
 Solr datasource is added to the CBoard0.4 version. Solr4.x does not have the grouping collection function, and 5.0+ can use the datasource collection function.
 
 ### Solr Datasource Configuration
-![](/assets/solr-ds-config.png)
+![](../../assets/solr-ds-config.png)
 
 ### Solr Test Connection
-![](/assets/solr-ds-test.png)
+![](../../assets/solr-ds-test.png)

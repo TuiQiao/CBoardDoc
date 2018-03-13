@@ -125,7 +125,7 @@ CBoard实现了对Saiku2.6的数据源连接，Saiku3.x的Restful接口相比2.6
 在CBoard0.4版本中加入了Solr数据源，Solr4.x没有分组集合功能，5.0+才可以使用数据源集合功能。
 
 ### Solr数据源配置
-![](/assets/solr-ds-config.png)
+![](../../assets/solr-ds-config.png)
 
 ### Solr连通性测试
-![](/assets/solr-ds-test.png)
+![](../../assets/solr-ds-test.png)
