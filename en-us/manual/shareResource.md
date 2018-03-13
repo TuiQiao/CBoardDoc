@@ -10,5 +10,5 @@ For normal users who do not have permission to access `user admin page`. They ca
 * <mark>Full Overwrite Authorization</mark>. You need to select all the resources which your want to share to that group and then click <kbd>Share</kbd> button.
 * <kbd>CTRL</kbd> + <kbd>Left mouse button</kbd>  to select multiple items
 
-![](/assets/share_resource.png)
+![](../../../assets/share_resource.png)
 

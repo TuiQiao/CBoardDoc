@@ -7,12 +7,12 @@ An **open** BI Dashboard platform that supports **interactive** multi-dimensiona
 
 
 ### Screenshot
-![](/assets/cboard_snapshot.png)
+![](../../assets/cboard_snapshot.png)
 
 ### Near Realtime data refresh
 **Be attention, refresh level is cube level rather than whole dashboard **
 
-![realtime_demo](/assets/realtime_dashboard.gif)
+![realtime_demo](../../assets/realtime_dashboard.gif)
 
 ## Features Of CBoard
 
@@ -45,17 +45,17 @@ An **open** BI Dashboard platform that supports **interactive** multi-dimensiona
 
 ## Demo
 ### Load Data from query or DataSet
-![case 0-switchdataload](/assets/9a874210-cb7d-11e6-9b7e-11721aac322c.gif)
+![case 0-switchdataload](../../assets/9a874210-cb7d-11e6-9b7e-11721aac322c.gif)
 ### Base Operation
-![case 1-](/assets/9c2ead88-cb7d-11e6-9ae4-4c1990f675c2.gif)
+![case 1-](../../assets/9c2ead88-cb7d-11e6-9ae4-4c1990f675c2.gif)
 ### Switch Chart
-![case2](/assets/9de976b2-cb7d-11e6-8217-4290e5ad039b.gif)
+![case2](../../assets/9de976b2-cb7d-11e6-8217-4290e5ad039b.gif)
 ### Type Calculated Measure
-![case 3-calculatedmeasures 1](/assets/9f3be54a-cb7d-11e6-882b-ef82bbb5100b.gif)
+![case 3-calculatedmeasures 1](../../assets/9f3be54a-cb7d-11e6-882b-ef82bbb5100b.gif)
 ### Add Dashboard Parameters
-![case4-addboardparam](/assets/74216f2e-cb82-11e6-9612-390a2f93184c.gif)
+![case4-addboardparam](../../assets/74216f2e-cb82-11e6-9612-390a2f93184c.gif)
 ### Use Parameters
-![case4-useparam](/assets/73f81fe8-cb82-11e6-95ea-d98b43a4abf2.gif)
+![case4-useparam](../../assets/73f81fe8-cb82-11e6-95ea-d98b43a4abf2.gif)
 
 
 ## Access Control
@@ -64,7 +64,7 @@ An **open** BI Dashboard platform that supports **interactive** multi-dimensiona
 - Grant access resource to a role by right **Grant** button.
 - Resource can only be granted to role. A user can act as more than one roles.
 
-![image](/assets/UserAdmin_Snap.png)
+![image](../../assets/UserAdmin_Snap.png)
 
 
 # Road Map
@@ -82,4 +82,4 @@ Waiting for your Contribution and pull request!
 If your company is using CBoard or prepare to use it, please let us known
 
 # Donate (请我们喝咖啡)
-![image](/assets/3eb1f00e-46b4-11e7-900f-77d9b1499f6b.png)
+![image](../../assets/3eb1f00e-46b4-11e7-900f-77d9b1499f6b.png)

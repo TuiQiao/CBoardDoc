@@ -168,11 +168,11 @@ $ mvn clean package
   为了数据安全，在编辑数据源的时候，密码不会被加载回前端。故每次测试数据连接和修改数据连接的时候请再次输入连接密码。
 </div>
 
-![](/assets/demo_datasource.png)
+![](../../../assets/demo_datasource.png)
 
 ## CBoard使用基本步骤
 
-![](/assets/use-steps.png)
+![](../../../assets/use-steps.png)
 
 
 

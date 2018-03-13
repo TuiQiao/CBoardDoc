@@ -14,18 +14,18 @@
 
 操作路径图如下：
 
-![](/assets/new_datasource.png)
+![](../../../assets/new_datasource.png)
 
 ## 1 JDBC数据源
 
 我们来点实际的，在此我们不纯粹为了宣传而罗列各种数据库产品，懂JDBC原理的都知道没有意义。<b class="bg-info">基本上所有关系型数据库都能支持.</b>
 <p>或许会存在一点点语法兼容问题，但是修改起来都比较简单。遇到后台日志抛语法错误异常请在github上面提issue，附上详细的异常日志，和操作步骤，我们会协助解决，更加欢迎提PR合并解决方案到我们的版本。
 目前我们生产环境上连接的是MySQL和SQLServer。</p>
-![](/assets/jdbc-datasource.png)
+![](../../../assets/jdbc-datasource.png)
 
 ### presto
 另外，**Presto也是通过JDBC的方式连接**。Presto的JDBC连接认证**没有用户名密码认证机制**，用户名和密码输入留空即可。
-![](/assets/datasource-presto.png)
+![](../../../assets/datasource-presto.png)
 
 ### 关于Hive和Spark
 理论上Hive、Spark-SQL也可以通过JDBC的方式连接，考虑到二者执行效率都不是太高不适合做及时交互查询引擎。不推荐引入
@@ -67,7 +67,7 @@ JdbcUrl：jdbc:kylin://<host>:<port>/<project>
   <p>**非数据源聚合的连接，切记注意数据集或者Query查询结果集大小。**</p>
 </div>
 
-![image](/assets/6d91308c-c2cb-11e6-8366-3422662c0837.png)
+![image](../../../assets/6d91308c-c2cb-11e6-8366-3422662c0837.png)
 
 <div class="bs-callout bs-callout-warning">
     <h4>关于Kylin1.6对子查询支持结果异常问题：</h4>
@@ -84,16 +84,16 @@ JdbcUrl：jdbc:kylin://<host>:<port>/<project>
    **原生连接模式下聚合操作只会在数据源进行。**
 </div>
 
-![](/assets/kylin-native-datasource.png)
+![](../../../assets/kylin-native-datasource.png)
 
 ## 3 Elasticsearch
 
 为搜索而生的ES，最近几年在数据分析领域使用得越来越广，ELK技术栈中可视化工具，Kibana5之前的版本基本不具备多维分析功能，Kibana5具备了简单的指标分组split metric功能，但是还是缺少不同聚合指标的计算功能（常用于计算转化率与占比之类的需求）（P.S. 或许是本人还不会用，有说错的地方请指正），所以CBoard0.3版本更新特意在原计划之外评估比较和Saiku3数据源的支持之后决定选择先支持ES。  
 ### ES 数据源配置
-![](/assets/es-datasource.png)
+![](../../../assets/es-datasource.png)
 
 ### 连通性测试
-![](/assets/ds-test-es.png)
+![](../../../assets/ds-test-es.png)
 
 ## 4 Saiku2.x
 
@@ -103,14 +103,14 @@ CBoard实现了对Saiku2.6的数据源连接，Saiku3.x的Restful接口相比2.6
 
 用过Saiku的可能会在这里产生疑问，Saiku的交叉表行列表头往往有层级关系，下图展示了一个2级列表头  
 
-![](/assets/saiku_crtbl.png)  
+![](../../../assets/saiku_crtbl.png)  
 当前CBoard获取数据的默认以粒度最小的列作为表头，**两级表头会合并为一级**，合并之后新的表头效果如下图所示：  
 
-![](/assets/saiku_crtbl_header.png)
+![](../../../assets/saiku_crtbl_header.png)
 
 ## 5 TextFile 文本数据源
 
 文本数据只能读取CBoard应用服务器本地文件，使用者需要自己架设ftp服务器单独维护文本文件的上传与管理。
 
-![](/assets/datasource-textfile.png)
+![](../../../assets/datasource-textfile.png)
 

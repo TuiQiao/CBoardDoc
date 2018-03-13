@@ -43,26 +43,26 @@ GROUP BY a, b, c, <span class="text-danger"><b>e, f, g</b></span></code></pre>
 * <kbd>添加层级、修改层级名</kbd>，之后拖拽相应的列到层级组节点下
 * <span class="text-danger">层级是图表下钻基础</span>
 * 计算表达式和过滤组通过<kbd>点击添加新建</kbd>
-![image](/assets/schema.png)
+![image](../../../assets/schema.png)
 
 ## 2 预定义聚合表达式
 
 1. 编辑聚合表达式并测试正确，表达式是用于聚合后再计算.  
 如: <code>Math.log\(sum\(columnA\)/count\(columB\)\)</code>, <kbd>check</kbd>按钮只能检测到表达式的格式是否基本正确，复杂表达式不能保证验证成功之后后续100%能够工作
 2. 0.3编辑栏替换为ace编辑器之后之前的点击辅助输入出现了一些兼容性问题，可以借助输入提示输入!  
-![image](/assets/952a5bfc-c2ce-11e6-89c9-fd15b514c173.png)
+![image](../../../assets/952a5bfc-c2ce-11e6-89c9-fd15b514c173.png)
 
 3. 数据集中预定义的聚合表达式在图表设计时不支持修改
 
 ## 3 预定义漏斗（过滤器）
 
 用于预定义动态日期窗口，点击下拉选择动态时间表达式模板，模板中的值可以编辑文本。用户可根据自己的需求改成任意大小时间窗口。
-![](/assets/pre-filter.png)
+![](../../../assets/pre-filter.png)
 
 ## 4 特殊数据集的查询定义说明
 
 ### 4.1 Kylin Native
-![image](/assets/KylinDataSet.png)
+![image](../../../assets/KylinDataSet.png)
 <div class="bs-callout bs-callout-info">
     使用Kylin数据源之前需对Kylin基本原理有所了解。
     需要填写项, 以及解释如下：
@@ -74,7 +74,7 @@ GROUP BY a, b, c, <span class="text-danger"><b>e, f, g</b></span></code></pre>
 
 
 ### 4.2 Elasticsearch
-![](/assets/es_dataset.png)
+![](../../../assets/es_dataset.png)
 <div class="bs-callout bs-callout-info">
     为了减少对ES版本以及第三方ES库的依赖，CBoard采取<mark>restful + DSL连接与查询模式</mark>。所以ES的使用需要使用者（尤其是建模者）对ES基本概念有所了解，之外还需要掌握一些DSL语法。
     ES查询需要参数需要精确到<code>Type，Index</code>名称可使用通配符原理与ES DSL查询URL参数一样。  
@@ -91,7 +91,7 @@ CBoard提供了三类常见的聚合Bulket覆盖辅助输入，具体可配置�
 2. number\_range: 数字区间聚合
 3. number\_hist：数字直方图
 
-![](/assets/es-override.png)
+![](../../../assets/es-override.png)
 
 ```json
 语法如下(可以重复覆盖多个列的聚合):
@@ -139,7 +139,7 @@ CBoard提供了三类常见的聚合Bulket覆盖辅助输入，具体可配置�
 
 在4.2.1中的聚合覆盖设置在数据集查询之上，相当于全局查询列聚合覆盖；同时如果想对一个列采取多种分桶策略，可以在Schema树上多次引用可选列，然后编辑custom信息
 
-![dd](/assets/selects_custom_override.png)
+![dd](../../../assets/selects_custom_override.png)
 
 ```json
 {
@@ -178,11 +178,11 @@ count("{
 }")
 ```
 
-![](/assets/ES-CM.png)
+![](../../../assets/ES-CM.png)
 
 !> CBoard也内建了一些常用过滤器输入辅助
 
-![](/assets/es-cm-completer.png)
+![](../../../assets/es-cm-completer.png)
 
 ## 5 准实时数据集
 
