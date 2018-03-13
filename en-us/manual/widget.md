@@ -25,15 +25,15 @@ Input the Repository of your `Saiku` as below
     </thead>
     <tbody>
         <tr>
-            <td><img src="/assets/Saiku_Rep.jpg" class="img-responsive" alt="Image"></td>
-            <td><img src="/assets/saikuquery.jpg" class="img-responsive" alt="Image"></td>
+            <td>![](/assets/Saiku_Rep.jpg)</td>
+            <td>![](/assets/saikuquery.jpg)</td>
         </tr>
     </tbody>
 </table>
 
 ## Design Widget
 <div class="t-alien-center">
-    <img src="/assets/config_widget.png" alt="Image">
+    ![](/assets/config_widget.png)
     <p>Widget Design Page</p>
 </div>
 
@@ -177,6 +177,7 @@ Use row header and column header as nodes and value in data area as line weight.
 </div>
 
 #### Radar
+
 One column for one circle on Radar.
 
 ![](../../../assets/Chart_Radar.png)
@@ -191,3 +192,11 @@ One column for one circle on Radar.
 
 ![](../../../assets/Chart_Bubble.png)
 
+#### Contrast
+
+| Design District | chart | requirement |
+| :--- | :--- | :--- |
+| Row dimension | Y-axis | Only one dimension node can be placed |
+| Value | X-axis | Only two index nodes can be placed |
+
+![](/assets/chart_contrast.png)
