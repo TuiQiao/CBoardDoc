@@ -14,11 +14,6 @@
     </tr>
     </thead>
     <tbody>
-    <tr class="success">
-        <td>携程</td>
-        <td>http://www.ctrip.com</td>
-        <td>逐步替代原有BO分析平台</td>
-    </tr>
     <tr>
         <td>微赛体育</td>
         <td>https://www.wesai.com/</td>
@@ -111,7 +106,7 @@
         <td>http://www.sundun.cn</td>
         <td></td>
     </tr>
-    <tr>
+    <tr class="success">
         <td>易企秀</td>
         <td>http://www.eqxiu.com</td>
         <td></td>
@@ -154,6 +149,31 @@
     <tr>
         <td>金色家园网</td>
         <td>http://www.jiachengnet.com/</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>湖南传拓智联网络科技有限公司</td>
+        <td>http://www.trasmart.com</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>湖南金诚创新科技有限公司</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="success">
+        <td>酷狗音乐</td>
+        <td>http://www.kugou.com</td>
+        <td></td>
+    </tr>
+    <tr class="success">
+        <td>交行卡中心</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="success">
+        <td>建行托管</td>
+        <td></td>
         <td></td>
     </tr>
     </tbody>
