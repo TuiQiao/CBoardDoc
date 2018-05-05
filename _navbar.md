@@ -1,3 +1,3 @@
 - Translations
-  - [:cn: 中文](/zh-cn/)
-  - [:uk: English](/en-us/)
+  - [:cn: 中文](http://peter_zhang921.gitee.io/cboard_docsify/#/zh-cn/)
+  - [:uk: English](https://tuiqiao.github.io/CBoardDoc/#/en-us/)
