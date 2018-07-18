@@ -40,7 +40,7 @@
 ### 驱动引入方式
 
 !> 添加JDBC数据源之前确认<code>WEB-INF\lib</code>下面已经包含了对应的JDBC驱动包，<b>MySQL/SQLServer/Kylin的JDBC驱动不需要额外引入。</b>
-1. Maven方式在打包之前修改pom.xml(推荐),下面是mysql的maven依赖：
+* Maven方式在打包之前修改pom.xml(推荐),下面是mysql的maven依赖：
 
 ```xml
 <dependency>
@@ -50,14 +50,14 @@
 </dependency>
 ```
 
-2. 应用在Web容器解包之后拷贝驱动到<code>WEB-INF\lib</code>，之后**重启Tomcat**
+* 应用在Web容器解包之后拷贝驱动到<code>WEB-INF\lib</code>，之后**重启Tomcat**
 
     * 填写完毕之后可以点击**测试**按钮，输入简单的sql查询测试数据源与CBoard之间的连通性
     * 0.3新增两项配置
     * <code>是否使用连接池</code> 设置数据源是否通过druid连接池的方式连接数据源
     * <code>数据源聚合</code> 0.3之后的版本支持聚合下推数据源
 
-## 2 Kylin 1.6数据源
+## 2 Kylin
 
 ### JDBC方式连接
 
@@ -85,8 +85,7 @@ JdbcUrl：jdbc:kylin://<host>:<port>/<project>
 
 ### Kylin原生连接
 
-<span class="text-primary">0.3版本</span>之后支持连接Kylin1.6原生通过restful接口读取解析Kylin数据模型，
-<p><span class="text-danger">kylin2.x由于返回的json元数据定义有所改动</span>，<span class="text-primary">0.5版本</span>已经做好了兼容，但是未最终发布，敬请期待！</p>
+`0.3版本`之后支持连接Kylin1.6, `0.4`兼容kylin 2.0, 2.1, 原生通过restful接口读取解析Kylin数据模型，
 <div class="bs-callout bs-callout-info">
    **原生连接模式下聚合操作只会在数据源进行。**
 </div>

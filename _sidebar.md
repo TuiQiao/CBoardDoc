@@ -1,5 +1,6 @@
 - Introduction
   - [Preface](en-us/preface.md)
+  - [Our Users](en-us/extra/customer.md)
 
 - Study
   - [Installation](en-us/manual/install.md)
@@ -18,5 +19,4 @@
 - Extra
   - [Release Notes](en-us/extra/releaseNote.md)
   - [Update App](en-us/extra/updateApp.md)
-  - [Our Users](en-us/extra/customer.md)
   - [Thanks](en-us/extra/thanks.md)

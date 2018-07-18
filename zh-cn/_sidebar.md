@@ -1,5 +1,6 @@
 - 介绍
   - [前言](zh-cn/preface.md)
+  - [谁在使用CBoard](zh-cn/extra/customer.md)
 
 - 学习
   - [安装与配置](zh-cn/manual/install.md)
@@ -22,5 +23,4 @@
 - 其他
   - [发布日志](zh-cn/extra/releaseNote.md)
   - [系统升级](zh-cn/extra/updateApp.md)
-  - [谁在使用CBoard](zh-cn/extra/customer.md)
   - [致谢](zh-cn/extra/thanks.md)
