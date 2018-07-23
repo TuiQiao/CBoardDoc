@@ -75,3 +75,10 @@ v0.3.2新增滑动条交互的参数![](../../assets/config_param_slider.png)
 看板参数绑定和用户绑定，每个用户可以保存自己特定的参数模板
 
 
+## 看板刷新
+<div class="admonition warning">
+  <p class="admonition-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> 看板刷新 </p>
+  看板的刷新不需要特意设定, 系统会自动根据图表后台配置的对应的数据集是否有更新, 自动刷新图表<br>
+  具体配置见 <a href="./#/zh-cn/manual/dataset?id=关于数据集更新间隔">关于数据集更新间隔<a/>
+</div>
+

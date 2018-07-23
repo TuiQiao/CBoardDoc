@@ -43,6 +43,15 @@ GROUP BY a, b, c, <span class="text-danger"><b>e, f, g</b></span></code></pre>
 * <kbd>添加层级、修改层级名</kbd>，之后拖拽相应的列到层级组节点下
 * <span class="text-danger">层级是图表下钻基础</span>
 * 计算表达式和过滤组通过<kbd>点击添加新建</kbd>
+
+
+### 关于数据集更新间隔
+这个问题影响到看板是如何做刷新的? 我们知道一个看板里面可以组合来自不同数据集的图表, 但是不是所有的数据集的图表都需要刷新.
+因此我们把看板上图表的刷新和数据集绑定在一起了, 在设计数据集的时候设置实时刷新时间间隔, 可以保持空，留空则不做后台刷新，填入大于0的值,
+看板展示的时候里面要是存在设置了刷新间隔的数据集所创建的图表, 该图表就会按设置的时间间隔重新读取数据并更新
+
+!> `Real Time Interval(s)`: 数据集刷新间隔(秒), 有了数据集刷新间隔之后, 该数据集下的图表在看板会在设定的时间重新获取数据更新图表
+
 ![image](../../assets/schema.png)
 
 ## 2 预定义聚合表达式
@@ -53,6 +62,16 @@ GROUP BY a, b, c, <span class="text-danger"><b>e, f, g</b></span></code></pre>
 ![image](../../assets/952a5bfc-c2ce-11e6-89c9-fd15b514c173.png)
 
 3. 数据集中预定义的聚合表达式在图表设计时不支持修改
+
+<div class="admonition warning">
+  <p class="admonition-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> sql的count distinct:</p>
+  表达式里面的distinct(col)与sql的count(distinct col)等价, 直接写count(distinct col)是错误的写法
+</div>
+
+<div class="admonition warning">
+  <p class="admonition-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> 怎么实现count(case when col > 10 then 1 else 0 end)</p>
+  加个引号就可以了, 表达式会把里面的语句当成一个整体 <code>count("case when col > 10 then 1 else 0 end")</code>
+</div>
 
 ## 3 预定义漏斗（过滤器）
 
@@ -184,8 +203,5 @@ count("{
 
 ![](../../assets/es-cm-completer.png)
 
-## 5 准实时数据集/看板刷新
-看板是如何做刷新的? 我们知道一个看板里面可以组合来自不同数据集的图表, 但是不是所有的数据集的图表都需要刷新
-因此我们把看板上图表的刷新和数据集绑定在一起了, 在设计数据集的时候设置实时刷新时间间隔, 可以保持空，留空则不做后台刷新，填入大于0的值,
-看板展示的时候里面要是存在设置了刷新间隔的数据集所创建的图表, 该图表就会按设置的时间间隔重新读取数据并更新
+
 

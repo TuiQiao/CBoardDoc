@@ -1,6 +1,6 @@
 - 介绍
   - [前言](zh-cn/preface.md)
-  - [谁在使用CBoard](zh-cn/extra/customer.md)
+  - [谁在使用](zh-cn/extra/customer.md)
 
 - 学习
   - [安装与配置](zh-cn/manual/install.md)
