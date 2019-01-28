@@ -127,6 +127,22 @@ cache.redis.hostName=127.0.0.1
 cache.redis.port=6379
 ```
 
+### 百度在线地图开发者 key
+
+百度在线地图需要联网请求百度地图 API, 同时开发者贡献了一个自己的 api 账号, 这也导致有部分谨慎的开发者在内网环境部署的时候不能正常使用(phantomjs 在服务端), 甚至防火墙检测到外网请求之后认为存在安全隐患
+
+!> 在产品上线之前请务必改成自己的账号, 以免造不必要的影响
+
+[申请地址](http://lbsyun.baidu.com/apiconsole/key)
+
+如果您不需要使用到在线地图，可以将下列文件中百度在线地图api请求注释掉
+- src/main/webapp/starter.html
+- src/main/webapp/render.html
+
+```html
+<!-- <script src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script> -->
+```
+
 ### 编译构建
 
 进入项目根目录(<code>pom.xml</code>所在目录)
