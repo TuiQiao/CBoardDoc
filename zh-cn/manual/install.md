@@ -81,7 +81,7 @@ git checkout branch-0.4
 
 #### 1. 从演示数据库开始
 - 你可以从用于演示的样本数据库开始，包含样本元数据库(cboard_demo2)和样本DW库(foodmart2)
-- 下载[cboard_demo & foodmart](https://pan.baidu.com/s/1skOyPh7)
+- 下载[cboard_demo & foodmart](https://pan.baidu.com/s/1GeS4-jAJl3nJBxLReU9wsQ), 密码:3x8i
 - 终端命令行进入下载这两个脚本的目录，并解压foodmart.zip
 - 进入MySQL命令行工具，执行下面两个脚本文件
 ```
